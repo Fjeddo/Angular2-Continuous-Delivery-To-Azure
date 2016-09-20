@@ -3,9 +3,9 @@
 @Component({
     selector: 'the-app',
     template: `
-        <h1>The Angular 2 App works like a charm!</h1>
+        <h1><a style="color: #555; text-decoration: none;" routerLink="/">The Angular 2 App works like a charm!</a></h1>
         <nav>
-              <a routerLink="/">Home</a>
+              <a routerLink="/home">Home</a>
               <a routerLink="/about">About</a>
         </nav>
         <router-outlet></router-outlet>

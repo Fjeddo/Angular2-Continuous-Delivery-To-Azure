@@ -5,8 +5,19 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-    { path: 'about', component: AboutComponent },
-    { path: '', component: HomeComponent }
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: HomeComponent
+    }
 ];
 
 export const appRoutingProviders: any[] = [];
