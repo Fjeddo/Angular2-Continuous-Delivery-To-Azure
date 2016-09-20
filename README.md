@@ -8,7 +8,11 @@ This repo is an example showing how to continuously deploy an Angular 2 web appl
 - The Angular 2 app is added. **Note the reference to index.d.ts in main.ts.** This seems to be needed to make gulp transpile the Angular 2 without errors. Here is [the code](https://github.com/Fjeddo/Angular2-Continuous-Delivery-To-Azure/tree/163e1f099526545d76b376598ad28a1fcbae40b2).
 
 ##Done!
-Now, if the deployment is correctly connected in the Azure Portal, the web application should deployed when pushing to the correct branch. Have a look at the web app in the example here http://angular2-cd.azurewebsites.net.
+Now, if the deployment is correctly connected in the Azure Portal, the web application should deployed when pushing to the correct branch. ~~Have a look at the web app in the example here http://angular2-cd.azurewebsites.net~~.
 
 ##Note
-This branch handles routing correctly, the master branch does not.
+This branch handles routing correctly, the master branch does not. 
+
+The routing enabled branch is deployed here: **[http://angular2-routing-cd.azurewebsites.net](http://angular2-routing-cd.azurewebsites.net)**
+
+Here is an example URL with optional route parameter: [http://angular2-routing-cd.azurewebsites.net/hello/Fjeddo](http://angular2-routing-cd.azurewebsites.net/hello/Fjeddo).
