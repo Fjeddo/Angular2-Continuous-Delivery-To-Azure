@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
+    <Compile Include="scripts\hello\hello.component.ts" />
     <Compile Include="server.js" />
     <Compile Include="systemjs.config.js" />
     <Content Include="index.html" />
@@ -45,6 +46,7 @@
     <Folder Include="scripts\" />
     <Folder Include="scripts\about\" />
     <Folder Include="scripts\home\" />
+    <Folder Include="scripts\hello\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="scripts\about\about.component.ts" />
