@@ -9,3 +9,6 @@ This repo is an example showing how to continuously deploy an Angular 2 web appl
 
 ##Done!
 Now, if the deployment is correctly connected in the Azure Portal, the web application should deployed when pushing to the correct branch. Have a look at the web app in the example here http://angular2-cd.azurewebsites.net.
+
+##Note
+This branch handles routing correctly, the master branch does not.
