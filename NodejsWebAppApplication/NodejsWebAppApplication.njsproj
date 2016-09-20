@@ -38,15 +38,21 @@
     <Compile Include="systemjs.config.js" />
     <Content Include="index.html" />
     <Content Include="package.json" />
+    <Content Include="scripts\about\about.component.html" />
     <Content Include="typings.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\" />
+    <Folder Include="scripts\about\" />
+    <Folder Include="scripts\home\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="scripts\about\about.component.ts" />
     <TypeScriptCompile Include="scripts\app.component.ts" />
     <TypeScriptCompile Include="scripts\app.module.ts" />
+    <TypeScriptCompile Include="scripts\app.routing.ts" />
     <TypeScriptCompile Include="scripts\hello.ts" />
+    <TypeScriptCompile Include="scripts\home\home.component.ts" />
     <TypeScriptCompile Include="scripts\main.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

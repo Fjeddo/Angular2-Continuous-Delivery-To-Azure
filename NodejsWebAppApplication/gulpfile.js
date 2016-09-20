@@ -1,7 +1,14 @@
 ﻿var gulp = require('gulp');
 var ts = require('gulp-typescript');
 
-gulp.task('default', function() {
+var appDestFolder = 'app';
+
+gulp.task('statics', function() {
+    return gulp.src('scripts/**/*.html')
+        .pipe(gulp.dest(appDestFolder));
+});
+
+gulp.task('transpile', function() {
     return gulp.src('scripts/**/*.ts')
         .pipe(ts({
             "target": "es5",
@@ -13,5 +20,7 @@ gulp.task('default', function() {
             "removeComments": false,
             "noImplicitAny": false
         }))
-        .pipe(gulp.dest('app'));
+        .pipe(gulp.dest(appDestFolder));
 });
+
+gulp.task('default', ['transpile', 'statics']);
